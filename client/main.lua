@@ -13,11 +13,11 @@ end, false)
 
 
 RegisterCommand('shell', function()
-    local point = CG.housing.msnrow.apt1
-    local model = lib.requestmodel(HS.shells.apt.low1, false)
+    local point = CG.housing.hotel1.loc
+    local model = lib.requestmodel(HS.shells.mdrnhtl1, false)
 
     shell = CreateObject(model, point.x, point.y, point.z, false, false, false)
-    Utils.mihsshell(shell)
+    Utils.mihsshell(shell, CG.housing.hotel1.head)
 end, false)
 
 RegisterCommand('dshell', function()
@@ -32,7 +32,7 @@ end, false)
 
 lib.callback.register('mihs:shell:spawn',  function()
     local point = CG.apt1.spawn
-    local model = lib.requestmodel(HS.apt1.model, false)
+    local model = lib.requestmodel(HS.shells.mdrnhtl1, false)
 
     shell = CreateObject(model, point.x, point.y, point.z, false, false, false)
     Utils.mihsshell(shell)

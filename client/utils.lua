@@ -1,7 +1,7 @@
 Utils = {}
 
-Utils.mihsshell = function(obj)
+Utils.mihsshell = function(obj, head)
     FreezeEntityPosition(obj, true)
     SetEntityAsMissionEntity(obj, true, true)
-    SetEntityHeading(obj, 0.0)
+    SetEntityHeading(obj, head)
 end
