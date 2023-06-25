@@ -1,5 +1,5 @@
 HS = {}
 
 HS.shells = {
-    mdrnhtl1 = 'modernhotel_shell',
+    mdrnhtl1 = 'furnitured_midapart',
 }
