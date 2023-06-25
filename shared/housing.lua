@@ -1,5 +1,5 @@
 HS = {}
 
 HS.shells = {
-    mdrnhtl1 = 'furnitured_midapart',
+    midapt = 'furnitured_midapart',
 }

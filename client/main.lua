@@ -13,11 +13,11 @@ end, false)
 
 
 RegisterCommand('shell', function()
-    local point = CG.housing.hotel1.loc
-    local model = lib.requestmodel(HS.shells.mdrnhtl1, false)
+    local point = CG.housing.vpci.apt1.loc
+    local model = lib.requestmodel(HS.shells.midapt, false)
 
     shell = CreateObject(model, point.x, point.y, point.z, false, false, false)
-    Utils.mihsshell(shell, CG.housing.hotel1.head)
+    Utils.mihsshell(shell, CG.housing.vpci.head)
 end, false)
 
 RegisterCommand('dshell', function()
@@ -31,18 +31,9 @@ end, false)
 
 
 lib.callback.register('mihs:shell:spawn',  function()
-    local point = CG.apt1.spawn
-    local model = lib.requestmodel(HS.shells.mdrnhtl1, false)
 
-    shell = CreateObject(model, point.x, point.y, point.z, false, false, false)
-    Utils.mihsshell(shell)
 end)
 
 lib.callback.register('mihs:shell:delete',  function()
-    if not shell then 
-        return 
-    end
 
-    DeleteEntity(shell)
-    shell = nil
 end)
