@@ -33,11 +33,11 @@ server_scripts {
 }
 
 
--- classic housing shells
+-- start shells
 this_is_a_map 'yes'
 
 files {
-      'shellpropsv19.ytyp'
+      'starter_shells_k4mb1.ytyp'
 }
 
-data_file 'DLC_ITYP_REQUEST' 'shellpropsv19.ytyp'
+data_file 'DLC_ITYP_REQUEST' 'starter_shells_k4mb1.ytyp'
